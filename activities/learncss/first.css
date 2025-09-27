@@ -1,4 +1,22 @@
-main dl{
-            color: blue;
+h1{
+    color:navy;
+}
+
+main dt{
+            color:maroon;
             font-size: 18pt;
         }
+        dd{
+            color: rgb(52, 5, 52);
+            font-size: 15pt;
+        }
+
+h3{
+    color: darkgreen;
+    font-size: 23pt;
+}
+main p{
+    color: maroon;
+    font-size: 18pt;
+
+}
