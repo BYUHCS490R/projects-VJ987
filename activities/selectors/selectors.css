@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header h1 {
+    color: coral;
+}
+main h1{
+    color: rgb(172, 76, 8);
+}
+#celestial{
+    color: blueviolet;
+}
+#hear{
+    color: firebrick;
+}
+.crimson{
+    color: crimson;
+}
+
+.bigger{
+    font-size: larger
+}
+.greenbigger{
+    color: green;
+    font-size: larger;
+}
+.flashier{
+    color: deeppink;
+    font-size: xx-large;
+}
+.standout{
+    font-weight: 800;
+}
