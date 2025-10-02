@@ -2,28 +2,24 @@ body{
     background-color: #ce9e68af;
     font-family:cursive;
 }
+
 header h1{
     color: #000000;
     font-size: 40pt;
 }
+
 main h1{
-    color: #081e47;
+    color: #4c047c;
 }
-#game{
-    color:#6b2253;
+
+#name{
+    color:#6b1c51;
 }
-#definition{
+
+.lighter{
     color:#69619e;
 }
-.lighter{
-    color:#1f458a;
-}
-.purple{
-    color: #6b2253;
-}
-.lightpurple{
-    color: #69619e;
-}
+
 #links{
     color:#1f458a;
 }
