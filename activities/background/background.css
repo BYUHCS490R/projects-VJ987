@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('greenbg.jpg');
+    color: rgb(212, 107, 107);
+}
+header{
+    background: url('leaf.png') no-repeat top right;
+}
+.mylist{
+    list-style-image: url(dot.jpg);
+}
+.other {
+    background-image: url('greenbg.jpg');
+    background-repeat: repeat;
+    background-color: darkgreen;
+}
