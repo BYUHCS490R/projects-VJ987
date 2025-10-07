@@ -1,7 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: url('greenbg.jpg');
-    color: rgb(212, 107, 107);
+    color: rgb(234, 105, 13);
 }
 header{
     background: url('leaf.png') no-repeat top right;
@@ -13,4 +13,7 @@ header{
     background-image: url('greenbg.jpg');
     background-repeat: repeat;
     background-color: darkgreen;
+}
+#lighter{
+    color: rgb(238, 161, 74);
 }
