@@ -1,0 +1,7 @@
+nav a{
+    color: burlywood;
+}
+.current{
+    color: black;
+    text-decoration: none;
+}
