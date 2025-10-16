@@ -5,9 +5,17 @@ body{
 }
 header h1{
     font-size: 40pt;
-    background-color: antiquewhite;
+    background-color: rgb(152, 237, 204);
     border-color: black;
     border-style: solid;
     border-width: 2px;
     text-align: center;
+}
+nav a{
+    display: inline-block;
+    padding: 6px;
+    color: rgb(247, 148, 165);
+    background-color: rgb(52, 8, 92);
+    border-bottom: thin solid bisque;
+    text-decoration: none;
 }
