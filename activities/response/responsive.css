@@ -22,6 +22,7 @@ main h2 {
 
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     background-color: coral;
 }
@@ -62,4 +63,26 @@ nav a:hover {
 
 .sidebar h3 {
     margin: 0;
+}
+
+@media ONLY screen AND (max-width: 550px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .main-row {
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-card{
+        order: -1;
+    }
 }
