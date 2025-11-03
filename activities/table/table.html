@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
-    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="table2.css">
 </head>
 <body>
     <header>
@@ -12,7 +12,8 @@
     </header>
     <main>
         <h1>Tables</h1>
-        <table border="1">
+        <table class="schedule">
+            <caption>My class Schedule</caption>
             <thead>
             <tr>
                 <td>Department</td>
@@ -23,7 +24,7 @@
                 <td>Credits</td>
             </tr>
             <tr>
-                <td colspan="6">Fall 2025</td>
+                <th colspan="6">Fall 2025</th>
             </tr>
             </thead>
             <tr>
@@ -34,7 +35,7 @@
                 <td>Somewhere</td>
                 <td>1</td>
             </tr>
-            <tr>
+            <tr class="grayish">
                 <td>SSAC</td>
                 <td>144</td>
                 <td>Volley-Ball</td>
@@ -48,15 +49,14 @@
                 <td>Standing Position</td>
                 <td>8 PM MS</td>
                 <td>Gym</td>
-                <td>3</td>
+                <td rowspan="2" class="num">3</td>
             </tr>
-            <tr>
+            <tr class="grayish">
                 <td>MATH</td>
                 <td>121</td>
                 <td>Statistics</td>
                 <td>Early</td>
                 <td>Stake Center</td>
-                <td>3</td>
             </tr>
                 <tfoot>
                     <tr>
@@ -74,6 +74,11 @@
         <p>You can't use a table when you're making simple lists or layouts that don't need rows and columns.</p>
         <h3>3. When do you need to do extra work for table accessibility?</h3>
         <p>You will need to do extra work for table accessibility when you want the readers to understand the table. You can add things like "caption", "th" for headers, and "scope" to tell what each header means.</p>
+        <h1>Answers (11.03.2025)</h1>
+        <h3>1. Why don't we use the border attribute?</h3>
+        <p>We don't use the "border atribute anymore because now we use CSS for styling a website.</p>
+        <h3>2. What is the easiest way to color every other row a different color?</h3>
+        <p>We color every other row using "tr:nth-child(even)" in CSS.</p>
         <p>&copy;2025 Vaianu Mariteragi</p>
     </footer>
 </body>

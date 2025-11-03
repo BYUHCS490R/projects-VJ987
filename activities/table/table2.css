@@ -1,0 +1,28 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.schedule {
+    caption-side: bottom;
+    border-spacing: 0;
+}
+
+.schedule thead tr {
+    background-color: chocolate;
+    color: white;
+}
+
+.schedule tfoot tr {
+    background-color: chocolate;
+    color: white;
+}
+
+
+.schedule tbody tr:nth-child(even) {
+    border-bottom: thin solid black;
+    background-color: antiquewhite;
+}
+
+.num {
+    vertical-align: top;
+}
