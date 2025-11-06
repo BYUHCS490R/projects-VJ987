@@ -12,12 +12,12 @@ header {
     text-align: center;
 }
         
-.container {
+.row {
     display: flex;
     flex: 1;
 }
 
-.main-content {
+.space {
     flex: 2;
     padding: 15px;
 }
@@ -53,6 +53,6 @@ th {
      color: white;
 }
 
-.container tbody tr:nth-child(even) {
+.row tbody tr:nth-child(even) {
     background-color: #e6750c;
 }
