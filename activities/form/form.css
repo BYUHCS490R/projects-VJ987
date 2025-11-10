@@ -1,5 +1,5 @@
 body {
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .form-row, .check-row {
@@ -13,7 +13,41 @@ body {
     text-align: right;
 }
 
+.form-row input:not([type= 'submit']), .form-row select, .form-row textarea {
+    padding: 5px 10px;
+    background-color: blue;
+    font-family: ;
+}
+
+.form-row input:not([type= 'submit']), :focus, .form-rowse select:focus, .form-row textarea:focus {
+    padding: 5px 10px;
+    background-color: darksalmon;
+    
+}
+
 .spacer {
     width: 150px;
-    text align: right\;
+    text-align: right;
+}
+
+fieldset {
+    background-color: chocolate;
+    width: 80%;
+    margin: auto;
+}
+
+legend {
+    background-color: darkgreen;
+    color: wheat;
+    padding: 20px;
+}
+
+@media ONLY screen AND (max-width: 480px) {
+    .form-row, .check-row {
+        flex-direction: column;
+}
+
+    fildset {
+        width: 95px;
+    }
 }
