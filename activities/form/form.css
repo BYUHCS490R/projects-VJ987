@@ -1,3 +1,19 @@
 body {
     font-family: cursive;
 }
+
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text align: right\;
+}
