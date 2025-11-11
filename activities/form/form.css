@@ -15,18 +15,18 @@ body {
 
 .form-row input:not([type= 'submit']), .form-row select, .form-row textarea {
     padding: 5px 10px;
-    background-color: blue;
+    background-color: rgb(160, 68, 37);
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
 }
 
 .form-row input:not([type= 'submit']), :focus, .form-rowse select:focus, .form-row textarea:focus {
-    background-color: darksalmon;
+    background-color: rgb(160, 68, 37);
 }
 
 .form-row input[type= 'submit'] {
-    background-color: gold;
+    background-color: rgb(25, 60, 25);
     color: white;
     padding: 10px;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 fieldset {
-    background-color: chocolate;
+    background-color: rgb(210, 183, 30);
     width: 80%;
     margin: auto;
 }
