@@ -16,13 +16,19 @@ body {
 .form-row input:not([type= 'submit']), .form-row select, .form-row textarea {
     padding: 5px 10px;
     background-color: blue;
-    font-family: ;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
 }
 
 .form-row input:not([type= 'submit']), :focus, .form-rowse select:focus, .form-row textarea:focus {
-    padding: 5px 10px;
     background-color: darksalmon;
-    
+}
+
+.form-row input[type= 'submit'] {
+    background-color: gold;
+    color: white;
+    padding: 10px;
 }
 
 .spacer {
@@ -45,9 +51,13 @@ legend {
 @media ONLY screen AND (max-width: 480px) {
     .form-row, .check-row {
         flex-direction: column;
-}
+    }
 
-    fildset {
+    fieldset {
         width: 95px;
+    }
+
+    .form-row label, .spacer {
+        text-align: left;
     }
 }
