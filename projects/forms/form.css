@@ -6,9 +6,8 @@ body {
     padding: 0;
     color: #222;
 }
-  
-  /* Header and Footer */
-header, footer {
+
+header {
     background-color: #455781;
     color: white;
     text-align: center;
@@ -17,8 +16,9 @@ header, footer {
   
 footer {
     background-color: #455781;
-    color: #ffffff;
-    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+    font-size: 15px;
     padding: 30px 15px;
 }
   
