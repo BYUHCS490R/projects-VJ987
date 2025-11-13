@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaianu's Web Design Site</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <header>
+    <h1>Gym Membership</h1>
+  </header>
+
+  <main>
+    <h1>Forms</h1>
+    <form action="formprocess.html" method="post">
+      <fieldset>
+        <legend>Sign Up</legend>
+        <div class="form-row">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="fname">
+        </div>
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-row">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+        <div class="check-row">
+            <div class="spacer"><strong>Gender:</strong></div>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+          </div>
+        <div class="form-row">
+          <label for="state">Membership Type:</label>
+          <select name="plan" id="plan">
+            <option value="">Select</option>
+            <option value="YR">Yearly</option>
+            <option value="MTH">Monthly</option>
+            <option value="VIP">VIP</option>
+            <option value="ST">Student</option>
+          </select>
+        </div>
+        <div class="check-row">
+            <div class="spacer"><strong>Training Focus:</strong></div>
+            <label><input type="radio" name="focus" value="strentgh"> Strentgh</label>
+            <label><input type="radio" name="focus" value="cardio"> Cardio</label>
+            <label><input type="radio" name="focus" value="flexibility"> Flexibility</label>
+            <label><input type="radio" name="focus" value="weight"> Weight Loss</label>
+          </div>
+          <div class="form-row">
+            <label for="state">Preferred Workout Time:</label>
+            <select name="plan" id="plan">
+              <option value="">Select</option>
+              <option value="MRG">Morning</option>
+              <option value="AFT">Afternoon</option>
+              <option value="EV">Evening</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="state">Workout Level:</label>
+            <select name="plan" id="plan">
+              <option value="">Select</option>
+              <option value="BGR">Beginner</option>
+              <option value="ITD">Intermediate</option>
+              <option value="AD">Advanced</option>
+            </select>
+          </div>
+          <div class="check-row">
+            <div class="spacer"></div>
+            <label><input type="checkbox"> Add Personal Trainer</label>
+          </div>
+        <div class="check-row">
+          <div class="spacer"></div>
+          <label><input type="checkbox"> I agree to the terms</label>
+        </div>
+        <div class="form-row">
+          <label for="comments">Fitness Goal:</label>
+          <textarea name="comments" id="comments" rows="5"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="spacer"></div>
+          <input type="submit" value="Submit" class="submit-btn">
+        </div>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <p>&copy;2025 Vaianu Mariteragi</p>
+  </footer>
+</body>
+</html>

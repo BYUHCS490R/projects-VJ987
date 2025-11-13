@@ -1,0 +1,127 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #91bfdf;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+  
+  /* Header and Footer */
+header, footer {
+    background-color: #455781;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+  
+footer {
+    background-color: #455781;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 30px 15px;
+}
+  
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+  
+fieldset {
+    border: 2px solid #06b6d4;
+    border-radius: 10px;
+    padding: 20px;
+}
+  
+legend {
+    font-weight: bold;
+    color: #0f172a;
+    padding: 0 10px;
+}
+  
+.form-row, .check-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+  
+.form-row label {
+    width: 150px;
+    font-weight: bold;
+}
+  
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="date"],
+.form-row select,
+.form-row textarea {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f8fafc;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+  
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+    border-color: #06b6d4;
+    box-shadow: 0 0 5px rgba(6,182,212,0.5);
+    outline: none;
+}
+  
+textarea {
+    resize: vertical;
+}
+  
+.check-row {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+  
+.check-row label {
+    font-weight: normal;
+}
+  
+.spacer {
+    width: 150px;
+}
+  
+.submit-btn {
+    background-color: #06b6d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    background-color: #270526;
+}
+  
+@media (max-width: 500px) {
+    .form-row, .check-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .form-row label,
+    .spacer {
+      text-align: left;
+    }
+}
+  
