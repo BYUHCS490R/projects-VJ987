@@ -42,7 +42,7 @@
                 </div>
                 <div class="check-row">
                     <div class="spacer"></div>
-                    <label><input type="checkbox" checked>I agree to the term</label>
+                    <label><input type="checkbox" name="terms" checked>I agree to the term</label>
                 </div>
                 <div class="check-row">
                     <div class= "spacer">Gender: </div>
@@ -76,7 +76,7 @@
         document.getElementById('myForm').addEventListener('submit',function(event) {
             event.preventDefault();
 
-            const fullname = document.getElementById('fullname').value;
+            const fullname = document.getElementById('full-name').value;
             const email = document.getElementById('email').value;
             const pass = document.getElementById('pass').value;
             const age = document.getElementById('age').value;
