@@ -12,6 +12,7 @@
     </header>
     <main>
         <h1>Forms</h1>
+        <div id="message"></div>
             <form action="formprocess.html" method="get" id="myForm">
                 <fieldset>
                     <legend>Sign Up</legend>
@@ -42,7 +43,7 @@
                 </div>
                 <div class="check-row">
                     <div class="spacer"></div>
-                    <label><input type="checkbox" name="terms" checked>I agree to the term</label>
+                    <label><input type="checkbox" name="terms" checked>I agree to the terms</label>
                 </div>
                 <div class="check-row">
                     <div class= "spacer">Gender: </div>
@@ -62,45 +63,12 @@
     </main>
     <footer>
        <h1>Answers (11.14)</h1>
-       <h3>1. What is JavaScript? How did it get its name?</h3>
-       <p>Java is a programming language used mainly to make web pages interactive.It was originally called "Mocha", then "LiveScript", and finally renamed "JavaScript" for marketing reasons to ride on Java's popularity.</p>
-       <h3>2. What are the two ways you can run JavaScript?</h3>
-       <p>First, you can run it in a browser (with HTML), in the DOM. Second, you can run it with "Node.js" (Backend).</p>
-       <h3>3. What was the most popular front-end js library?</h3>
-       <p>jQuery was the most popular library for many years.</p>
-       <h3>4. What is the most popular front-end js library today?</h3>
-       <p>Today, "REACT" is the most popular JavaScript library.</p>
+       <h3>1. What is AJAX?</h3>
+       <p>AJAX is a way for a webpage to get new information from the server without refreshing the whole page.</p>
+       <h3>2. Why do you want to put your JS Code in a separate file?</h3>
+       <p>You put it in a separate file because it keeps your code organized, easier to read, and makes your website load faster.</p>
         <p>&copy;2025 Vaianu Mariteragi</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event) {
-            event.preventDefault();
-
-            const fullname = document.getElementById('full-name').value;
-            const email = document.getElementById('email').value;
-            const pass = document.getElementById('pass').value;
-            const age = document.getElementById('age').value;
-
-            if (!fullname || !email) {
-                alert("You need a name and an email.");
-                return;
-            }
-
-            if (!age || age <18) {
-                alert("You need to be 18");
-                return;
-            }
-
-            const formData = {
-                name: fullname,
-                email: email,
-                password: pass,
-                age: age
-            };
-
-            alert("Form Submitted");
-            console.log(formData);
-        });
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
