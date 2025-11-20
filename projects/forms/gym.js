@@ -5,9 +5,15 @@
             const email = document.getElementById('email').value;
             const phone = document.getElementById('phone').value;
             const age = document.getElementById('age').value;
+            const dob = document.getElementById('dob').value;
+            const gender = document.querySelector('input[name="gender"]:checked') ? document.querySelector('input[name="gender"]:checked').value : '';
+            const type = document.getElementById('type').value;
+            const focus = document.querySelector('input[name="focus"]:checked') ? document.querySelector('input[name="focus"]:checked').value : '';
+            const time = document.getElementById('time').value;
+            const level = document.getElementById('level').value;
 
-            if (!fullname || !email) {
-                alert("You need a name and an email.");
+            if (!fullname || !email || !phone) {
+                alert("Please fill in your full name, email, and phone number.");
                 return;
             }
 
@@ -19,15 +25,22 @@
             const formData = {
                 name: fullname,
                 email: email,
-                password: pass,
-                age: age
+                phone: phone,
+                age: age,
+                dob: dob,
+                gender: gender,
+                membershipType: type,
+                focus: focus,
+                time: time,
+                level: level,
+                comments: comments
             };
 
             alert("Form Submitted");
             console.log(formData);
             const xhr = new XMLHttpRequest();
             xhr.open("GET", "submit.json", true);
-            xhr.setRequestHeader("Content-Type", "appication/json;charset=UTF-8");
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
                     alert("Form submitted successfully!");
