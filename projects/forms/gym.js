@@ -1,4 +1,4 @@
-document.getElementById('myForm').addEventListener('submit', function(event) {
+document.getElementById('GymForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const fullname = document.getElementById('full-name').value.trim();
@@ -59,12 +59,12 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
                     messageDiv = document.createElement('div');
                     messageDiv.id = 'message';
                     messageDiv.style.marginTop = '20px';
-                    document.getElementById('myForm').parentNode.appendChild(messageDiv);
+                    document.getElementById('GymForm').parentNode.appendChild(messageDiv);
                 }
                 messageDiv.innerText = response.message;
 
 
-                document.getElementById('myForm').reset();
+                document.getElementById('GymForm').reset();
             } else {
                 alert("Error submitting form.");
             }
