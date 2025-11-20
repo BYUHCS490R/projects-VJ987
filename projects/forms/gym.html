@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FORMS</title>
-  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="gym.css">
 </head>
 <body>
   <header>
@@ -15,7 +15,7 @@
     <h1>Forms</h1>
     <form action="formprocess.html" method="post">
       <fieldset>
-        <legend>Sign Up</legend>
+        <legend>Membership</legend>
         <div class="form-row">
           <label for="full-name">Full Name:</label>
           <input type="text" id="full-name" name="fname">
@@ -27,6 +27,10 @@
         <div class="form-row">
           <label for="phone">Phone:</label>
           <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-row">
+          <label for="phone">Age:</label>
+          <input type="number" id="age" name="age">
         </div>
         <div class="form-row">
           <label for="dob">Date of Birth:</label>
@@ -94,5 +98,6 @@
   <footer>
     <p>&copy;2025 Vaianu Mariteragi</p>
   </footer>
+  <script src="gym.js"></script>
 </body>
 </html>
