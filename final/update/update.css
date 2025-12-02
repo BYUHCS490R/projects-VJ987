@@ -4,35 +4,35 @@ body {
     padding: 0;
   }
   
-  header {
+header {
     background-color: #009688;
     color: white;
     padding: 10px 20px;
   }
   
-  h1, h2 {
+h1, h2 {
     margin: 0.5em 0;
   }
   
-  nav ul {
+nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
   }
   
-  nav li {
+nav li {
     margin-right: 10px;
   }
   
-  nav a {
+nav a {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
   }
   
-  nav a.current {
+nav a.current {
     background-color: #004d40;
   }
   
@@ -100,4 +100,3 @@ body {
     padding: 10px;
     margin-top: 20px;
   }
-  
