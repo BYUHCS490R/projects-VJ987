@@ -6,6 +6,7 @@
   <title>Visitor Form</title>
   <link rel="stylesheet" href="final.css">
 </head>
+
 <body>
   <header>
     <h1>Visitor Form</h1>
@@ -17,32 +18,41 @@
         <li><a href="food.html">Food & Cooking</a></li>
         <li><a href="art.html">Clothing & Art</a></li>
         <li><a href="form.html" class="current">Form</a></li>
-      </ul>
+      </ul> 
     </nav>
   </header>
 
   <main>
+    <h2>Tell Us What You Think!</h2>
+
+    
     <form id="visitorForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Your Age:</label>
+      <input type="number" id="age" name="age" required>
 
       <label for="country">Country of Origin:</label>
       <input type="text" id="country" required>
 
-      <label for="visited">Have you visited Tahiti?</label>
-      <select id="visited" required>
-        <option value="">Select</option>
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
+      <label for="favorite">Your Favorite Part of Tahitian Culture:</label>
+      <select id="favorite" name="favorite" required>
+        <option value="">-- Choose one --</option>
+        <option value="Language">Language</option>
+        <option value="Dance">Dance & Music</option>
+        <option value="Food">Food & Cooking</option>
+        <option value="Art">Clothing & Art</option>
       </select>
-
-      <label for="interest">What do you want to learn most?</label>
-      <input type="text" id="interest" required>
 
       <button type="submit">Submit</button>
     </form>
 
-    <p id="successMessage" style="display:none;">Thank you! Your form has been submitted.</p>
+    
+    <div id="successMessage" style="display:none; margin-top:20px;">
+      <h3>Thank you for your submission!</h3>
+      <p>Your response has been recorded.</p>
+    </div>
   </main>
 
   <footer>
