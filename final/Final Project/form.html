@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor Form</title>
+  <link rel="stylesheet" href="final.css">
+</head>
+<body>
+  <header>
+    <h1>Visitor Form</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="language.html">Language</a></li>
+        <li><a href="dance.html">Dance & Music</a></li>
+        <li><a href="food.html">Food & Cooking</a></li>
+        <li><a href="art.html">Clothing & Art</a></li>
+        <li><a href="form.html" class="current">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form id="visitorForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="country">Country of Origin:</label>
+      <input type="text" id="country" required>
+
+      <label for="visited">Have you visited Tahiti?</label>
+      <select id="visited" required>
+        <option value="">Select</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="interest">What do you want to learn most?</label>
+      <input type="text" id="interest" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="successMessage" style="display:none;">Thank you! Your form has been submitted.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vaianu Mariteragi</p>
+  </footer>
+
+  <script src="final.js"></script>
+</body>
+</html>
