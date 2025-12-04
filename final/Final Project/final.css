@@ -58,8 +58,6 @@ nav a.current {
   }
 }
 
-/* -------------------- TABLE STYLE (Language Page) -------------------- */
-
 table {
   border-collapse: collapse;
   width: 100%;
@@ -76,8 +74,6 @@ caption {
   font-weight: bold;
   margin-bottom: 5px;
 }
-
-/* -------------------- FORM STYLE -------------------- */
 
 form {
   display: flex;
@@ -109,8 +105,8 @@ button:hover {
 .food-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: left;
+  gap: 90px;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -138,8 +134,8 @@ button:hover {
 .art-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: left;
+  gap: 90px;
+  justify-content: center;
   margin-top: 20px;
 }
 
